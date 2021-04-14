@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>待定</title>
+		<meta name="viewport" content="user-scalable=no" />
+		<link rel="stylesheet" href="./css/ryxq.css">
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<!-- <img src="./img/男性抬头.png" alt="" class="bj"> -->
+		<!-- 头部 -->
+		<header class="head_pt">
+			<div id=""><a href=""><img src="./img/fanhuif.png" ></a></div>
+			<div><h2 class="head_pt_zj">人员详情</h2></div>
+			<div id=""><a href=""><h3 class="xd">帮生活</h3></a></div>
+		</header>
+		<!-- 主体 -->
+		<main class="content_zt">
+			<div class="">
+				<div class=""></div>
+			</div>
+			<div class="content_top">
+				<p>跑腿人员</p>
+				<p>距离 / 时间</p>
+			</div>
+			<!-- sousuo -->
+			<div class="sousuo">
+				<img src="img/sousuo.png" >
+				<input type="text" class="">
+			</div>
+			<ul class="paotui paotui_zj">
+				<li>
+					<div>
+						<p><h2 style="display: inline-block;">人员</h2>
+					</div>
+					<div class="paotui_zy">服务中</div>
+				</li>
+			</ul>
+			<ul class="paotui">
+				<li>
+					<div>
+						<div>
+							<p><h3 style="display: inline-block;">人员</h3>  
+								<p class="pingjia" style="margin-top:.5rem;">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/shoucang.png" alt="">
+									<span class="pingjia_pj" style="color:red; font-size:2.5rem;">很好</span>
+								</p>
+							</p>
+							<p class="ry_gn">
+								<span>跑腿</span>
+								<span>修水管</span>
+								<span>修车</span>
+							</p>
+						</div>
+					</div>
+					<div class="paotui_zy">服务中</div>
+					<div class="yl_sc" style="">
+						<div class="yl_sc_jl">
+							<p>等待1小时</p>
+							<p></p>
+						</div>
+						<div class="sc" style="">
+							<div class="sc_sj">
+								<p><img src="img/zsj.png" ></p>
+								<p></p>
+							</div>
+							<div class="">
+								<img src="img/weishoucang.png" alt="">
+								<p>收藏</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div>
+							<p><h3 style="display: inline-block;">人员</h3>  
+								<p class="pingjia" style="margin-top:.5rem;">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/weishoucang.png" alt="">
+									<img src="img/weishoucang.png" alt="">
+									<span class="pingjia_pj" style="color:red; font-size:2.5rem;">好</span>
+								</p>
+							</p>
+							<p class="ry_gn">
+								<span>跑腿</span>
+								<span>修车</span>
+								<span>修水管</span>
+							</p>
+						</div>
+					</div>
+					<div class="paotui_zy">下单</div>
+					<div class="yl_sc" style="">
+						<div class="yl_sc_jl">
+							<p>10分到达</p>
+						</div>
+						<div class="sc" style="">
+							<div class="sc_sj">
+								<p><img src="img/zsj.png" ></p>
+							</div>
+							<div class="">
+								<img src="img/weishoucang.png" alt="">
+								<p>收藏</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div>
+							<p><h3 style="display: inline-block;">人员</h3>  
+								<p class="pingjia" style="margin-top:.5rem;">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/shoucang.png" alt="">
+									<img src="img/weishoucang.png" alt="">
+									<img src="img/weishoucang.png" alt="">
+									<span class="pingjia_pj" style="color:red; font-size:2.5rem;">好</span>
+								</p>
+							</p>
+							<p class="ry_gn">
+								<span>修水</span>
+								<span>跑腿</span>
+								<span>修车</span>
+							</p>
+						</div>
+					</div>
+					<div class="paotui_zy">下单</div>
+					<div class="yl_sc" style="">
+						<div class="yl_sc_jl">
+							<p>等待1小时</p>
+							<p></p>
+						</div>
+						<div class="sc" style="">
+							<div class="sc_sj">
+								<p><img src="img/zsj.png" ></p>
+								<p></p>
+							</div>
+							<div class="sc_sc">
+								<img src="img/weishoucang.png" alt="">
+								<p>收藏</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</main>
+		<!-- 底部 -->
+		<footer class="dibu">
+			
+		</footer>
+	</body>
+	<script src="./js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+	<script type="text/javascript">
+		
+		var index=0
+		var startX
+		
+		$(".paotui li").on("touchstart",function(e){
+			startX=e.touches[0].clientX
+			// console.log("下："+startX)
+		})
+		$(".paotui li").on("touchend",function(e){
+			var endX=e.changedTouches[0].pageX
+			// console.log("起："+endX)
+			if(startX-endX>200){
+				$(this).find(".sc").animate({left:+12+"%"},500)
+				$(this).find(".sc_sj").animate({opacity:"0"},0)
+				$(this).find(".yl_sc_jl").animate({opacity:"0"},50)
+				
+			}else if(startX-endX<-200){
+				$(this).find(".sc").animate({left:100+"%"},500)
+				$(this).find(".sc_sj").animate({opacity:"1"},0)
+				$(this).find(".yl_sc_jl").animate({opacity:"1"},150)
+			}
+			sc()
+		})
+		
+		function sc(){
+			$(".sc_sc").on("touchstart",function(){
+				var wsc=$(this).find("img").attr("src")
+				// console.log(wsc)
+				if(wsc=="img/weishoucang.png"){
+					$(this).find("img").attr("src","img/shoucang.png")
+				}else{
+					$(this).find("img").attr("src","img/weishoucang.png")
+				}
+				setTimeout(function () {
+					$(".paotui li").find(".sc").animate({left:100+"%"},500)
+					$(".paotui li").find(".sc_sj").animate({opacity:"1"},0)
+					$(".paotui li").find(".yl_sc_jl").animate({opacity:"1"},150)
+				}, 1000);
+				
+				//$(".sc_sc").toggle($(this).find("img").attr("src","img/shoucang.png"),$(this).find("img").attr("src","img/weishoucang.png"))
+			})
+		}
+		
+	</script>
+</html>
